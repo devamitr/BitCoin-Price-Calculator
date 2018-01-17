@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitblack"
+    tools:context="com.example.amit_.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="This is a Sample Android Application used to demonstrate Amit Ratwani's proficiency at developing Android Apps. Special Thanks to CoinBase for the API."
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorwhite"/>
+
+
+        <TextView
+            android:id="@+id/textView_USD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_EUR"
+            android:layout_alignStart="@+id/textView_EUR"
+            android:layout_below="@+id/textView_GBP"
+            android:layout_marginTop="64dp"
+            android:text="USD"
+            android:textColor="@color/colorwhite"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textView_GBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_EUR"
+            android:layout_alignRight="@+id/textView_EUR"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="37dp"
+            android:text="GBP"
+            android:textColor="@color/colorwhite"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/textView_EUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_USD"
+            android:layout_marginLeft="74dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="50dp"
+            android:text="EUR"
+            android:textColor="@color/colorwhite"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_GetPrices"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Get Latest Prices"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="419dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_GBP"
+            android:layout_alignBottom="@+id/textView_GBP"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/textView_EUR"
+            android:layout_toRightOf="@+id/textView_EUR"
+            android:text="Pound"
+            android:textColor="@color/colorwhite"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_USD"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:text="Dollar"
+            android:textColor="@color/colorwhite"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_EUR"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:text="Euro"
+            android:textColor="@color/colorwhite"
+            android:textSize="26sp"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
